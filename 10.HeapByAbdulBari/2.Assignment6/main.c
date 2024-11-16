@@ -8,6 +8,12 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
+    printf("Number of arguments (argc): %d\n", argc);
+
+    for (int i = 0; i < argc; i++) {
+        printf("Argument %d: %s\n", i, argv[i]);
+    }
+
     const char *filename = argv[1];
     Heap heap;
     initHeap(&heap); 

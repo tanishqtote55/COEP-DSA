@@ -23,7 +23,7 @@ void insert(Heap *heap, int value) {
     int parent = (i - 1) / 2; // Parent index
 
     // Heapify up
-    while (i > 0 && heap->a[i] < heap->a[parent]) { // Min-heap property
+    while (i > 0 && heap->a[i] < heap->a[parent]) { // Min-heap property and For Max-heap property there should be heap->a[i] > heap->a[parent]
         // Swap parent and current element
         int temp = heap->a[i];
         heap->a[i] = heap->a[parent];
