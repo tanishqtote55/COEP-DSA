@@ -43,7 +43,7 @@ int Delete(int A[],int n){
         }
         else
             break;
-        }
+    }
     return val;
 } 
 
